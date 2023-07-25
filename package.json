@@ -22,6 +22,7 @@
     "@mui/material": "latest",
     "@storybook/nextjs": "^7.0.27",
     "@styled-jsx/plugin-sass": "^4.1.0",
+    "@svgr/webpack": "^8.0.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
