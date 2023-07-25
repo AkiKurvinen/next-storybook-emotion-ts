@@ -1,20 +1,24 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
+import type { Meta, StoryObj } from '@storybook/react'
 import { Button } from './Button';
-import { KeyboardArrowRight } from '@mui/icons-material';
+import { Icon } from '../Icon/Icon';
 
-
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Button> = {
   title: 'Design System/Atoms/Button',
   component: Button,
   tags: ['autodocs'],
-
+  argTypes: {
+    variant: {
+      type: 'string',
+      control: 'text',
+    }
+  },
 };
 
 export default meta;
 type Story = StoryObj<typeof Button>;
+const ButtonContent: EmotionJSX.Element = <Icon icon='storybook'/>
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Contained: Story = {
   args: {
     variant: 'contained',
@@ -36,3 +40,8 @@ export const Text: Story = {
   },
 };
 
+export const WithIcon: Story = {
+  render: () => (
+    <Button variant='contained' label='Button' endicon={ButtonContent}/>
+  )
+};

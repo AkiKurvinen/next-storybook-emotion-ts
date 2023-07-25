@@ -14,7 +14,7 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^11.11.0",
     "@emotion/cache": "latest",
-    "@emotion/react": "latest",
+    "@emotion/react": "^11.11.1",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
     "@etchteam/storybook-addon-css-variables-theme": "^1.5.1",
@@ -22,9 +22,11 @@
     "@mui/material": "latest",
     "@storybook/nextjs": "^7.0.27",
     "@styled-jsx/plugin-sass": "^4.1.0",
+    "@svgr/webpack": "^8.0.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-icons": "^4.10.1",
     "storybook-addon-themes": "^6.1.0",
     "styled-components": "^6.0.4",
     "webpack-merge": "^5.9.0"
