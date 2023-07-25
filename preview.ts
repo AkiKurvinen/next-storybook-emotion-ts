@@ -1,7 +1,7 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-styling'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import type { Preview } from '@storybook/react';
-import { GlobalStyles }  from '../src/GlobalStyles'
+import { GlobalStyles }  from './src/GlobalStyles'
 
 export const decorators = [
   withThemeFromJSXProvider({

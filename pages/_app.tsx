@@ -2,7 +2,7 @@ import * as React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
-import createEmotionCache from '../src/createEmotionCache';
+import { createEmotionCache } from '../src/createEmotionCache';
 import { GlobalStyles } from '../src/GlobalStyles'
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();

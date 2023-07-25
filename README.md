@@ -6,10 +6,17 @@
 - Global custom styles
 - Custom button component for demo purposes
 
+## Development
 ```bash
 npm install  
 npm run dev  
 npm run storybook  
+```
+
+## Deployment
+```bash
+npm run build  
+npm run build-storybook
 ```
 ## Based on "Material UI - Next.js example in TypeScript"
 

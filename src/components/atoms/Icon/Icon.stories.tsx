@@ -10,24 +10,37 @@ const meta: Meta<typeof Icon> = {
 export default meta;
 type Story = StoryObj<typeof Icon>;
 
+export const ReactIconsFontawesome: Story = {
+  args: {
+    icon: 'react-fontawesome',
+    fill: 'crimson'
+  },
+};
+export const ReactIconsHeroicons: Story = {
+  args: {
+    icon: 'react-heroicons',
+    fill: 'crimson'
+  },
+};
 export const MUIIcon: Story = {
   args: {
-    icon: 'arrowright',
-    fill: 'black',
+    icon: 'mui-arrowright',
+    fill: 'crimson',
   },
 };
 
 export const CustomSVGIcon: Story = {
   args: {
     icon: 'storybook',
-    fill: 'black',
+    fill: 'crimson',
   },
 };
 
-export const HeroiconsDotCom: Story = {
+export const StrokeSVG: Story = {
   args: {
-    icon: 'heroicons',
+    icon: 'stroke-svg',
     fill: 'none',
-    stroke: 'black',
+    stroke: 'crimson',
   },
 };
+
