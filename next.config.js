@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  basePath: '/dist',
+  // basePath: '/dist',
   output: 'export',
   distDir: 'dist',
   reactStrictMode: true,
